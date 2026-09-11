@@ -331,8 +331,7 @@ I manually inspected model failures on the golden evaluation set. Here are the t
 * **What goes wrong**: Customers complain about new UI changes or software bugs introduced in a recent app release that post-date the retrieval index.
 * **Real Example**: *"Where did the heart button go in version 8.8.12? The new plus icon isn't adding tracks to my library."*
 * **Why it happens**: The historical retrieval index contains resolution pairs explaining the legacy "Heart" button interface.
-* **Mitigation**: Track retrieval distance scores ($1 - \text{top1\_sim}$). If top similarity falls below 0.45, the query triggers an OOD escalation flag.
-
+* **Mitigation**: Track retrieval distance scores (`1 - top1_sim`). If top similarity falls below 0.45, the query triggers an OOD escalation flag.
 ### Failure Mode 4: Implicit Sarcasm and Negative Emotion Masking
 
 * **What goes wrong**: Sarcastic customer praise is taken literally by the generator, leading to overly polite or inappropriate responses.
