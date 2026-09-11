@@ -1,0 +1,6 @@
+brand,total_company_replies,visible_resolution_rate,dm_deflection_rate,english_purity,avg_reply_length_chars,exact_dup_rate,volume_score,resolution_score,diversity_score,self_contain_score,noise_score,english_score,repetition_score,weighted_total,disqualified
+ChipotleTweets,19,0.842,0.053,0.944,68.8,0.0,1.0,0.842,1.0,0.513,0.947,0.944,0.333,0.793,False
+VerizonSupport,13,0.769,0.154,0.923,77.0,0.0,0.684,0.769,1.0,0.575,0.846,0.923,0.333,0.741,False
+AskPlayStation,1,1.0,0.0,0.0,134.0,0.0,0.053,1.0,1.0,1.0,1.0,0.0,0.333,0.722,False
+Ask_Spectrum,6,0.667,0.167,1.0,99.3,0.0,0.316,0.667,1.0,0.741,0.833,1.0,0.333,0.709,False
+sprintcare,7,0.286,0.714,0.857,113.6,0.0,0.368,0.286,1.0,0.848,0.286,0.857,0.333,0.566,False

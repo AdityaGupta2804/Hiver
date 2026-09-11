@@ -1,0 +1,18 @@
+{
+  "operating_threshold": 0.45,
+  "achieved_coverage": 0.81,
+  "target_error_rate": 0.05,
+  "intent_risk_tiers": {
+    "account_security": "high",
+    "billing_dispute": "high",
+    "subscription_refund": "high",
+    "payment_failure": "high",
+    "account_login": "medium",
+    "family_plan": "medium",
+    "app_crash": "low",
+    "audio_playback": "low",
+    "playlist_sync": "low",
+    "download_offline": "low",
+    "other": "medium"
+  }
+}

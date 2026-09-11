@@ -1,0 +1,7 @@
+{
+  "cohen_kappa_quadratic": 0.8069,
+  "spearman_correlation": 0.7382,
+  "exact_match_rate": 0.6667,
+  "within_1_point_rate": 1.0,
+  "sample_size": 30
+}

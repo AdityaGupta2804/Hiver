@@ -1,0 +1,21 @@
+# Intent Risk Tiers for Escalation Layer (Blueprint Section 12.2)
+high_risk:
+  - account_security
+  - billing_dispute
+  - subscription_refund
+  - payment_failure
+  description: "Mandatory human review or high composite risk. Involves credentials, unauthorized transactions, or chargebacks."
+
+medium_risk:
+  - account_login
+  - family_plan
+  - subscription_upgrade
+  - other
+  description: "Conditional escalation based on confidence and retrieval strength. Involves standard account management."
+
+low_risk:
+  - audio_playback
+  - app_crash
+  - playlist_sync
+  - download_offline
+  description: "Eligible for autonomous resolution if grounded retrieval evidence is strong."

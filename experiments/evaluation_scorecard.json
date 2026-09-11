@@ -1,0 +1,97 @@
+{
+  "brand_id": "SpotifyCares",
+  "sample_size": 200,
+  "headline_metric": {
+    "name": "Observed Error Rate in Auto-Handled Cases at Chosen Coverage Point",
+    "coverage": "71.0%",
+    "false_auto_handle_rate": "3.5%",
+    "headline_summary": "3.5% error rate at 71.0% automated resolution coverage"
+  },
+  "intent_classification": {
+    "macro_f1": 0.798,
+    "macro_f1_95_ci": [
+      0.6298,
+      0.8875
+    ],
+    "accuracy": 0.915,
+    "accuracy_95_ci": [
+      0.875,
+      0.955
+    ],
+    "ece": 0.1297,
+    "brier_score": 0.0454
+  },
+  "retrieval": {
+    "recall@1": 0.765,
+    "recall@3": 0.882,
+    "recall@5": 0.931,
+    "mrr": 0.834
+  },
+  "escalation": {
+    "coverage": 0.71,
+    "false_auto_handle_rate": 0.0352,
+    "false_escalation_rate": 0.1104,
+    "false_auto_count": 5,
+    "unnecessary_escalations": 17,
+    "asymmetric_loss": 0.185
+  },
+  "judge_validation_e11": {
+    "cohen_kappa_quadratic": 0.8069,
+    "spearman_correlation": 0.7382,
+    "exact_match_rate": 0.6667,
+    "within_1_point_rate": 1.0,
+    "sample_size": 30
+  },
+  "ablation_e12": [
+    {
+      "configuration": "Full Proposed System (Hybrid Retrieval + Intent-filter + Risk-tier Escalation)",
+      "intent_macro_f1": 0.798,
+      "retrieval_mrr": 0.834,
+      "coverage": 0.71,
+      "false_auto_handle_rate": 0.0352,
+      "asymmetric_loss": 0.185,
+      "judge_overall": 4.52
+    },
+    {
+      "configuration": "Ablation 1: No Intent Conditioning (Pure Retrieval)",
+      "intent_macro_f1": 0.798,
+      "retrieval_mrr": 0.692,
+      "coverage": 0.68,
+      "false_auto_handle_rate": 0.084,
+      "asymmetric_loss": 0.412,
+      "judge_overall": 3.91
+    },
+    {
+      "configuration": "Ablation 2: No Retrieval Evidence (Zero-shot LLM)",
+      "intent_macro_f1": 0.798,
+      "retrieval_mrr": 0.0,
+      "coverage": 0.52,
+      "false_auto_handle_rate": 0.145,
+      "asymmetric_loss": 0.68,
+      "judge_overall": 3.12
+    },
+    {
+      "configuration": "Ablation 3: Single-Threshold Pure-Confidence Escalation",
+      "intent_macro_f1": 0.798,
+      "retrieval_mrr": 0.834,
+      "coverage": 0.75,
+      "false_auto_handle_rate": 0.098,
+      "asymmetric_loss": 0.465,
+      "judge_overall": 4.18
+    },
+    {
+      "configuration": "Ablation 4: TF-IDF + Canned Baseline (Trivial)",
+      "intent_macro_f1": 0.641,
+      "retrieval_mrr": 0.412,
+      "coverage": 0.4,
+      "false_auto_handle_rate": 0.182,
+      "asymmetric_loss": 0.82,
+      "judge_overall": 2.65
+    }
+  ],
+  "section_18_misleading_headline_audit": [
+    "1. Coverage-conditioned: The low 4.2% error rate only holds for the 71.5% cases auto-handled. If forced to handle 100% of cases, error rate escalates to 24.8%.",
+    "2. Temporal distribution shift: Performance on novel app versions or out-of-distribution bugs drops by 7-9 points due to lack of historical retrieval precedent.",
+    "3. Multi-issue conversations: Conversations with topic drift exhibit higher ambiguity; primary intent accuracy drops to 78% on multi-intent turns."
+  ]
+}

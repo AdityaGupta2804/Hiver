@@ -1,0 +1,15 @@
+# Brand scoring rubric weights (pre-committed per Blueprint Section 4.2)
+weights:
+  conversation_volume_post_dedup: 0.10
+  visible_resolution_rate: 0.25
+  issue_diversity: 0.15
+  self_containedness: 0.15
+  escalation_worthy_presence: 0.10
+  noise_level: 0.10
+  english_purity: 0.10
+  repetition_of_issues: 0.05
+
+disqualification_floors:
+  min_visible_resolution_rate: 0.20
+  min_english_purity: 0.85
+  min_company_replies: 5000

@@ -1,0 +1,6 @@
+{
+  "brand_id": "SpotifyCares",
+  "best_config_label": "E5b_dense_only",
+  "use_intent_filter": true,
+  "include_reranker": false
+}

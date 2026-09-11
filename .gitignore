@@ -1,0 +1,55 @@
+# ==============================================================================
+# .gitignore for Hiver SDE Internship Assignment: Customer Support AI System
+# ==============================================================================
+
+# --- Python Virtual Environments (CRITICAL: DO NOT PUSH) ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Large Raw Datasets (CRITICAL: >100MB will be rejected by GitHub) ---
+# twcs.csv is ~493MB and exceeds GitHub's 100MB file limit
+datasets/twcs/twcs.csv
+datasets/*.csv
+datasets/*.zip
+datasets/*.tar.gz
+datasets/bundle.complete
+kagglehub/
+.cache/
+
+# --- Python Bytecode & Cache Directories ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- IDEs & System Metadata ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# --- Environment Variables & Secrets ---
+.env
+.env.local
+*.pem
+*.key
+
+# --- Large Temporary / Scratch Files ---
+scratch/
+tmp/
+*.log
+

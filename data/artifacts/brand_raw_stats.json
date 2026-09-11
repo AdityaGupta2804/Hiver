@@ -1,0 +1,67 @@
+{
+  "ChipotleTweets": {
+    "total_company_replies": 19,
+    "total_customer_tweets": 18,
+    "dm_deflection_count": 1,
+    "dm_deflection_rate": 0.05263157894736842,
+    "content_free_count": 2,
+    "content_free_rate": 0.10526315789473684,
+    "resolution_count": 16,
+    "visible_resolution_rate": 0.8421052631578947,
+    "exact_dup_rate": 0.0,
+    "english_purity": 0.9444444444444444,
+    "avg_reply_length_chars": 68.78947368421052
+  },
+  "VerizonSupport": {
+    "total_company_replies": 13,
+    "total_customer_tweets": 13,
+    "dm_deflection_count": 2,
+    "dm_deflection_rate": 0.15384615384615385,
+    "content_free_count": 1,
+    "content_free_rate": 0.07692307692307693,
+    "resolution_count": 10,
+    "visible_resolution_rate": 0.7692307692307693,
+    "exact_dup_rate": 0.0,
+    "english_purity": 0.9230769230769231,
+    "avg_reply_length_chars": 77.0
+  },
+  "sprintcare": {
+    "total_company_replies": 7,
+    "total_customer_tweets": 7,
+    "dm_deflection_count": 5,
+    "dm_deflection_rate": 0.7142857142857143,
+    "content_free_count": 0,
+    "content_free_rate": 0.0,
+    "resolution_count": 2,
+    "visible_resolution_rate": 0.2857142857142857,
+    "exact_dup_rate": 0.0,
+    "english_purity": 0.8571428571428571,
+    "avg_reply_length_chars": 113.57142857142857
+  },
+  "Ask_Spectrum": {
+    "total_company_replies": 6,
+    "total_customer_tweets": 6,
+    "dm_deflection_count": 1,
+    "dm_deflection_rate": 0.16666666666666666,
+    "content_free_count": 1,
+    "content_free_rate": 0.16666666666666666,
+    "resolution_count": 4,
+    "visible_resolution_rate": 0.6666666666666666,
+    "exact_dup_rate": 0.0,
+    "english_purity": 1.0,
+    "avg_reply_length_chars": 99.33333333333333
+  },
+  "AskPlayStation": {
+    "total_company_replies": 1,
+    "total_customer_tweets": 0,
+    "dm_deflection_count": 0,
+    "dm_deflection_rate": 0.0,
+    "content_free_count": 0,
+    "content_free_rate": 0.0,
+    "resolution_count": 1,
+    "visible_resolution_rate": 1.0,
+    "exact_dup_rate": 0.0,
+    "english_purity": 0.0,
+    "avg_reply_length_chars": 134.0
+  }
+}

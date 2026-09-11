@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  hiver-support-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hiver-customer-support:latest
+    container_name: hiver_support_app
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true

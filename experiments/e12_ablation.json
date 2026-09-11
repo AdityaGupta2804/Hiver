@@ -1,0 +1,47 @@
+[
+  {
+    "configuration": "Full Proposed System (Hybrid Retrieval + Intent-filter + Risk-tier Escalation)",
+    "intent_macro_f1": 0.798,
+    "retrieval_mrr": 0.834,
+    "coverage": 0.71,
+    "false_auto_handle_rate": 0.0352,
+    "asymmetric_loss": 0.185,
+    "judge_overall": 4.52
+  },
+  {
+    "configuration": "Ablation 1: No Intent Conditioning (Pure Retrieval)",
+    "intent_macro_f1": 0.798,
+    "retrieval_mrr": 0.692,
+    "coverage": 0.68,
+    "false_auto_handle_rate": 0.084,
+    "asymmetric_loss": 0.412,
+    "judge_overall": 3.91
+  },
+  {
+    "configuration": "Ablation 2: No Retrieval Evidence (Zero-shot LLM)",
+    "intent_macro_f1": 0.798,
+    "retrieval_mrr": 0.0,
+    "coverage": 0.52,
+    "false_auto_handle_rate": 0.145,
+    "asymmetric_loss": 0.68,
+    "judge_overall": 3.12
+  },
+  {
+    "configuration": "Ablation 3: Single-Threshold Pure-Confidence Escalation",
+    "intent_macro_f1": 0.798,
+    "retrieval_mrr": 0.834,
+    "coverage": 0.75,
+    "false_auto_handle_rate": 0.098,
+    "asymmetric_loss": 0.465,
+    "judge_overall": 4.18
+  },
+  {
+    "configuration": "Ablation 4: TF-IDF + Canned Baseline (Trivial)",
+    "intent_macro_f1": 0.641,
+    "retrieval_mrr": 0.412,
+    "coverage": 0.4,
+    "false_auto_handle_rate": 0.182,
+    "asymmetric_loss": 0.82,
+    "judge_overall": 2.65
+  }
+]

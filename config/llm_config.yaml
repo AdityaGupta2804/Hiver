@@ -1,0 +1,17 @@
+# LLM configuration for Response Generation and Judging (Blueprint Section 20)
+generation:
+  model: "gpt-4o-mini"
+  temperature: 0.0
+  max_tokens: 300
+  response_format: "json_object"
+  timeout_seconds: 30
+
+judge:
+  model: "gpt-4o"
+  temperature: 0.0
+  max_tokens: 400
+  response_format: "json_object"
+
+fallback:
+  enable_offline_deterministic: true
+  heuristic_judge: true

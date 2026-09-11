@@ -1,0 +1,37 @@
+# Experiment Hyperparameters (Blueprint Section 23)
+experiments:
+  e1:
+    name: "majority_class_canned_baseline"
+    description: "Trivial baseline — absolute performance floor"
+  e2:
+    name: "tfidf_logistic_regression"
+    max_features: 5000
+    ngram_range: [1, 2]
+  e3:
+    name: "embedding_knn"
+    n_neighbors: 5
+    metric: "cosine"
+  e4:
+    name: "zero_shot_llm"
+    temperature: 0.0
+  e5_e7:
+    name: "retrieval_system"
+    rrf_k: 60
+    top_k: 5
+    reranker: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  e8:
+    name: "fine_tuning"
+    min_delta_f1_threshold: 0.02
+    n_bootstrap: 1000
+  e9:
+    name: "response_generation_groundedness"
+    sample_size: 50
+  e10:
+    name: "escalation_risk_coverage"
+    target_error_rate: 0.05
+    asymmetric_cost_weight: 4.0
+  e11:
+    name: "judge_validation"
+    sample_size: 30
+  e12:
+    name: "system_ablation"

@@ -1,0 +1,16 @@
+{
+  "selected_brand": "SpotifyCares",
+  "metrics": {
+    "total_company_replies": 43265,
+    "visible_resolution_rate": 0.691,
+    "dm_deflection_rate": 0.308,
+    "english_purity": 0.92,
+    "weighted_total_score": 0.678
+  },
+  "disqualification_reasons_for_alternatives": {
+    "AmazonHelp": "Disqualified: English purity is only 69.5%, failing the >=85% threshold (Section 3 row 5). Multilingual mix introduces noise outside core evaluation.",
+    "AppleSupport": "High DM-deflection rate (52.9%) leaves visible resolution rate at only 46.9%, failing the high-grounding requirement.",
+    "Uber_Support": "High DM-deflection rate (38.8%) due to trip-specific receipt/account issues."
+  },
+  "rationale": "Selected 'SpotifyCares' because it satisfies all hard criteria (visible resolution rate 69.1% >> 20% floor, English purity 92.0% >= 85%, volume 43,265 rows). Crucially, 'SpotifyCares' features technical troubleshooting (audio, offline sync, app crashes) with reusable solutions, combined with distinct account/billing issue categories that provide natural escalation tiers."
+}

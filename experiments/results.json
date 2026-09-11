@@ -1,0 +1,296 @@
+[
+  {
+    "experiment_id": "E1_majority_class",
+    "config": {
+      "brand": "SpotifyCares"
+    },
+    "results": {
+      "baseline": "E1_majority_class",
+      "macro_f1": 0.0834,
+      "ece": 0.0,
+      "per_class": {
+        "account_login": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        "account_security": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "app_crash": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "audio_playback": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "billing_dispute": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 15
+        },
+        "download_offline": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 9
+        },
+        "other_unclear": {
+          "precision": 0.715,
+          "recall": 1.0,
+          "f1": 0.8338192419825073,
+          "support": 143
+        },
+        "playlist_content_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "subscription_refund": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "subscription_upgrade": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 9
+        }
+      },
+      "n_examples": 200
+    }
+  },
+  {
+    "experiment_id": "E2_tfidf_linear",
+    "config": {
+      "brand": "SpotifyCares"
+    },
+    "results": {
+      "baseline": "E2_tfidf_linear",
+      "macro_f1": 0.5518,
+      "ece": 0.0737,
+      "per_class": {
+        "account_login": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        "account_security": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "app_crash": {
+          "precision": 0.5,
+          "recall": 0.14285714285714285,
+          "f1": 0.2222222222222222,
+          "support": 7
+        },
+        "audio_playback": {
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285714,
+          "support": 5
+        },
+        "billing_dispute": {
+          "precision": 0.9230769230769231,
+          "recall": 0.8,
+          "f1": 0.8571428571428571,
+          "support": 15
+        },
+        "download_offline": {
+          "precision": 1.0,
+          "recall": 0.5555555555555556,
+          "f1": 0.7142857142857143,
+          "support": 9
+        },
+        "other_unclear": {
+          "precision": 0.8650306748466258,
+          "recall": 0.986013986013986,
+          "f1": 0.9215686274509803,
+          "support": 143
+        },
+        "playlist_content_missing": {
+          "precision": 1.0,
+          "recall": 0.42857142857142855,
+          "f1": 0.6,
+          "support": 7
+        },
+        "subscription_refund": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "subscription_upgrade": {
+          "precision": 0.6,
+          "recall": 0.6666666666666666,
+          "f1": 0.631578947368421,
+          "support": 9
+        }
+      },
+      "n_examples": 200
+    }
+  },
+  {
+    "experiment_id": "E3_embedding_knn",
+    "config": {
+      "brand": "SpotifyCares"
+    },
+    "results": {
+      "baseline": "E3_embedding_knn",
+      "macro_f1": 0.4923,
+      "ece": 0.041,
+      "per_class": {
+        "account_login": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        "account_security": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "app_crash": {
+          "precision": 0.5,
+          "recall": 0.2857142857142857,
+          "f1": 0.36363636363636365,
+          "support": 7
+        },
+        "audio_playback": {
+          "precision": 0.5,
+          "recall": 0.4,
+          "f1": 0.4444444444444444,
+          "support": 5
+        },
+        "billing_dispute": {
+          "precision": 0.75,
+          "recall": 0.8,
+          "f1": 0.7741935483870968,
+          "support": 15
+        },
+        "download_offline": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2222222222222222,
+          "f1": 0.3333333333333333,
+          "support": 9
+        },
+        "other_unclear": {
+          "precision": 0.8481012658227848,
+          "recall": 0.9370629370629371,
+          "f1": 0.8903654485049833,
+          "support": 143
+        },
+        "playlist_content_missing": {
+          "precision": 0.75,
+          "recall": 0.42857142857142855,
+          "f1": 0.5454545454545454,
+          "support": 7
+        },
+        "subscription_refund": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "subscription_upgrade": {
+          "precision": 0.8,
+          "recall": 0.4444444444444444,
+          "f1": 0.5714285714285714,
+          "support": 9
+        }
+      },
+      "n_examples": 200
+    }
+  },
+  {
+    "experiment_id": "E5a_bm25_only",
+    "config": {
+      "brand": "SpotifyCares"
+    },
+    "results": {
+      "label": "E5a_bm25_only",
+      "use_bm25": true,
+      "use_dense": false,
+      "use_intent_filter": false,
+      "mrr": 0.0,
+      "avg_top1_similarity": 0.0,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0
+    }
+  },
+  {
+    "experiment_id": "E5b_dense_only",
+    "config": {
+      "brand": "SpotifyCares"
+    },
+    "results": {
+      "label": "E5b_dense_only",
+      "use_bm25": false,
+      "use_dense": true,
+      "use_intent_filter": false,
+      "mrr": 1.0,
+      "avg_top1_similarity": 0.8865,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0
+    }
+  },
+  {
+    "experiment_id": "E5c_hybrid",
+    "config": {
+      "brand": "SpotifyCares"
+    },
+    "results": {
+      "label": "E5c_hybrid",
+      "use_bm25": true,
+      "use_dense": true,
+      "use_intent_filter": false,
+      "mrr": 1.0,
+      "avg_top1_similarity": 0.87,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0
+    }
+  },
+  {
+    "experiment_id": "E6_intent_conditioned_hybrid",
+    "config": {
+      "brand": "SpotifyCares"
+    },
+    "results": {
+      "label": "E6_intent_conditioned_hybrid",
+      "use_bm25": true,
+      "use_dense": true,
+      "use_intent_filter": true,
+      "mrr": 1.0,
+      "avg_top1_similarity": 0.87,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0
+    }
+  }
+]

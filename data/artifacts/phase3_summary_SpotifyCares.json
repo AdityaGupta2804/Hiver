@@ -1,0 +1,23 @@
+{
+  "brand_id": "SpotifyCares",
+  "total_raw_rows": 2811774,
+  "brand_rows": 88209,
+  "after_language_filter": 85668,
+  "threads_total": 26910,
+  "threads_with_company_reply": 26749,
+  "resolution_pairs": 17021,
+  "language_stats": {
+    "total": 44939,
+    "english_count": 42308,
+    "short_kept": 15,
+    "failed_detection_kept": 75,
+    "total_kept": 42398,
+    "non_english_dropped": 2541,
+    "english_rate": 0.9434566857295444
+  },
+  "pii_scan": {
+    "total_texts": 34042,
+    "texts_with_pii": 0,
+    "pii_type_counts": {}
+  }
+}

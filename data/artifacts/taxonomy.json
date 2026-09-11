@@ -1,0 +1,76 @@
+{
+  "brand_id": "SpotifyCares",
+  "frozen": true,
+  "intents": [
+    {
+      "id": 0,
+      "label": "audio_playback",
+      "display_name": "Audio Playback Issues",
+      "definition": "Music pausing unexpectedly, buffering, stuttering, sound cut-offs, volume issues, or songs stopping when switching apps or receiving notifications.",
+      "example": "@SpotifyCares why does spotify pause my music everytime i try to go to another app?"
+    },
+    {
+      "id": 1,
+      "label": "app_crash",
+      "display_name": "App Crash / Freeze / Device Compatibility",
+      "definition": "App crashing on launch, freezing, black screen, iOS or Android bugs, app not optimized for new device (e.g. iPhone X), or requests for compatibility updates.",
+      "example": "@SpotifyCares update the iPhone X app please"
+    },
+    {
+      "id": 2,
+      "label": "account_login",
+      "display_name": "Account Login / Access Issues",
+      "definition": "Login errors, inability to sign in, Facebook connect issues, credentials not working, account access lost after Facebook account deletion, or forgotten password.",
+      "example": "@SpotifyCares I deleted my facebook account which was linked to my Spotify account. I can't log anymore into Spotify"
+    },
+    {
+      "id": 3,
+      "label": "account_security",
+      "display_name": "Account Security / Compromised Account",
+      "definition": "Compromised accounts, unauthorized email or password changes, account takeover, unusual activity, hacking, or situations requiring immediate account freeze. HIGH RISK — always escalate.",
+      "example": "@SpotifyCares my account suddenly logged me out on all devices and says my email doesn't exist anymore"
+    },
+    {
+      "id": 4,
+      "label": "billing_dispute",
+      "display_name": "Billing Dispute / Unauthorized Charge",
+      "definition": "Being charged without having Premium, double charges, unauthorized transactions, account billed after cancellation, payment showing as processed but account still showing as free. HIGH RISK — always escalate.",
+      "example": "@SpotifyCares you guys charged my account even though I don't have premium!"
+    },
+    {
+      "id": 5,
+      "label": "subscription_refund",
+      "display_name": "Subscription Refund Request",
+      "definition": "Explicit requests for refunds, charges after cancellation refund requests, disputed payment refund claims. HIGH RISK — always escalate.",
+      "example": "@SpotifyCares I want a refund I was charged after I cancelled"
+    },
+    {
+      "id": 6,
+      "label": "subscription_upgrade",
+      "display_name": "Subscription Upgrade / Student / Family / Hulu",
+      "definition": "Student discount verification, Premium Duo or Family plan setup, Hulu bundle activation, eligibility questions about promotional offers, upgrading from free to paid.",
+      "example": "@SpotifyCares I already have an existing Student Premium Account, But i can't find the link to activate my Hulu account with it."
+    },
+    {
+      "id": 7,
+      "label": "playlist_content_missing",
+      "display_name": "Missing Content / Album Not Available",
+      "definition": "Missing playlists, albums not showing up, specific artists or songs unavailable on Spotify, content licensing questions, artist content not yet on platform.",
+      "example": "@115888 add the Perfect Velvet album right now i've been waiting all damn day"
+    },
+    {
+      "id": 8,
+      "label": "download_offline",
+      "display_name": "Download / Offline Playback Issues",
+      "definition": "Offline songs un-downloading, downloaded songs disappearing, storage limits for offline listening, issues with offline mode toggle, songs not syncing for offline use.",
+      "example": "@SpotifyCares my offline songs keep disappearing"
+    },
+    {
+      "id": 9,
+      "label": "other_unclear",
+      "display_name": "Other / Unclear",
+      "definition": "Message does not fit any defined intent, or intent is unclear from the available text. Includes emoji-only tweets, generic thank-you replies, URL-only messages, vague complaints without actionable detail.",
+      "example": "@SpotifyCares OK thanks"
+    }
+  ]
+}

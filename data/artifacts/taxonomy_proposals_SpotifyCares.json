@@ -1,0 +1,169 @@
+{
+  "brand_id": "SpotifyCares",
+  "status": "HUMAN_REVIEWED",
+  "instructions": "Canonical 10-intent taxonomy manually curated from the 21 raw HDBSCAN cluster proposals. Clusters merged/renamed per Hiver assignment canonical categories.",
+  "n_clusters_proposed": 10,
+  "n_noise_messages": 9307,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "label": "audio_playback",
+      "display_name": "Audio Playback Issues",
+      "definition": "Music pausing unexpectedly, buffering, stuttering, sound cut-offs, volume issues, or songs stopping when switching apps or receiving notifications.",
+      "example": "@SpotifyCares why does spotify pause my music everytime i try to go to another app?",
+      "n_messages": 48,
+      "sample_messages": [
+        "@SpotifyCares why does spotify pause my music everytime i try to go to another app?",
+        "@SpotifyCares Hi. @115888 keeps pausing on me randomly. Help?",
+        "@SpotifyCares My music keeps pausing, saying my account is in use elsewhere.",
+        "@SpotifyCares hey my app and phone are up to date but the Spotify keeps pausing randomly, what should I do?",
+        "My Spotify keeps pausing when I get notifications @SpotifyCares"
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 1,
+      "label": "app_crash",
+      "display_name": "App Crash / Freeze / Device Compatibility",
+      "definition": "App crashing on launch, freezing, black screen, iOS or Android bugs, app not optimized for new device (e.g. iPhone X), or requests for compatibility updates.",
+      "example": "@SpotifyCares update the iPhone X app please",
+      "n_messages": 48,
+      "sample_messages": [
+        "@SpotifyCares update the iPhone X app please",
+        "@115888 when will you have an update for the iPhone X?",
+        "When the fuck will the damn app be optimized for the iPhone X @115888?",
+        "@SpotifyCares @115888 Please release a new update to be compatible with iPhone X!",
+        "Another @115888 update and still no iPhone X support"
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 2,
+      "label": "account_login",
+      "display_name": "Account Login / Access Issues",
+      "definition": "Login errors, inability to sign in, Facebook connect issues, credentials not working, account access lost after Facebook account deletion, or forgotten password.",
+      "example": "@SpotifyCares I deleted my facebook account which was linked to my Spotify account. I can't log anymore into Spotify",
+      "n_messages": 48,
+      "sample_messages": [
+        "@SpotifyCares I deleted my facebook account which was linked to my Spotify account. I can't log anymore into Spotify :( Any help/tips?",
+        "@SpotifyCares Hi there. Having some difficulties logging into Spotify via Facebook.",
+        "@SpotifyCares hi guys, my spotify wont log in, please help",
+        "@SpotifyCares I haven't used my Spotify account in a long time and now that I try to login if I try my email it says I am using my Facebook credentials.",
+        "Can't login to my account with facebook. please help"
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 3,
+      "label": "account_security",
+      "display_name": "Account Security / Compromised Account",
+      "definition": "Compromised accounts, unauthorized email or password changes, account takeover, unusual activity, hacking, or situations requiring immediate account freeze. HIGH RISK — always escalate.",
+      "example": "@SpotifyCares my account suddenly logged me out on all devices and says my email doesn't exist anymore",
+      "n_messages": 12,
+      "sample_messages": [
+        "@SpotifyCares my account suddenly logged me out on all devices and says my email doesn't exist anymore",
+        "@SpotifyCares someone hacked my spotify and changed the email and password",
+        "@SpotifyCares my account was hacked please help",
+        "@SpotifyCares I received an email that my account email was changed but I did not request this",
+        "@SpotifyCares there is unauthorized activity on my account"
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 4,
+      "label": "billing_dispute",
+      "display_name": "Billing Dispute / Unauthorized Charge",
+      "definition": "Being charged without having Premium, double charges, unauthorized transactions, account billed after cancellation, payment showing as processed but account still showing as free. HIGH RISK — always escalate.",
+      "example": "@SpotifyCares you guys charged my account even though I don't have premium!",
+      "n_messages": 48,
+      "sample_messages": [
+        "@SpotifyCares you guys charged my account even though I don't have premium!",
+        "@SpotifyCares I have been getting charged for the past year and I have the free subscription",
+        "@SpotifyCares I canceled Spotify months ago! And I noticed recently I'm still getting charged the premium rate.",
+        "@SpotifyCares i did paid to premium, but my current status is still free",
+        "@SpotifyCares Hi! I have subscribed to premium account a few hours ago and payment was validated, but turns out, my account is still free."
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 5,
+      "label": "subscription_refund",
+      "display_name": "Subscription Refund Request",
+      "definition": "Explicit requests for refunds, charges after cancellation refund requests, disputed payment refund claims. HIGH RISK — always escalate.",
+      "example": "@SpotifyCares I want a refund I was charged after I cancelled",
+      "n_messages": 12,
+      "sample_messages": [
+        "@SpotifyCares I want a refund I was charged after I cancelled",
+        "@SpotifyCares please refund my account I cancelled two months ago",
+        "@SpotifyCares I need a refund for this unauthorized charge on my account",
+        "@SpotifyCares how do I get a refund for the premium I was accidentally signed up for",
+        "@SpotifyCares requesting refund for double billing on my card"
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 6,
+      "label": "subscription_upgrade",
+      "display_name": "Subscription Upgrade / Student / Family / Hulu",
+      "definition": "Student discount verification, Premium Duo or Family plan setup, Hulu bundle activation, eligibility questions about promotional offers, upgrading from free to paid.",
+      "example": "@SpotifyCares I already have an existing Student Premium Account, But i can't find the link to activate my Hulu account with it.",
+      "n_messages": 48,
+      "sample_messages": [
+        "@SpotifyCares I already have an existing Student Premium Account, But i can't find the link to activate my Hulu account with it. Please Help :)",
+        "@SpotifyCares my student premium account isn't connecting to Hulu anymore",
+        "@SpotifyCares I can't get my Hulu account to authorize with the student discount deal.",
+        "@SpotifyCares I'm trying to connect my Spotify Student account with Hulu and it isn't working",
+        "@115888 I've been a premium user for over a year now, can I avail this?"
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 7,
+      "label": "playlist_content_missing",
+      "display_name": "Missing Content / Album Not Available",
+      "definition": "Missing playlists, albums not showing up, specific artists or songs unavailable on Spotify, content licensing questions, artist content not yet on platform.",
+      "example": "@115888 add the Perfect Velvet album right now i've been waiting all damn day",
+      "n_messages": 72,
+      "sample_messages": [
+        "@115888 add the Perfect Velvet album right now i've been waiting all damn day",
+        "@115888 put red velvets new album on!!",
+        "@115888 Are you not going to put @118062 new album reputation???",
+        "@SpotifyCares when is reputation going to be available on spotify",
+        "Why isn't #reputation on @115888????"
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 8,
+      "label": "download_offline",
+      "display_name": "Download / Offline Playback Issues",
+      "definition": "Offline songs un-downloading, downloaded songs disappearing, storage limits for offline listening, issues with offline mode toggle, songs not syncing for offline use.",
+      "example": "@SpotifyCares my offline songs keep disappearing",
+      "n_messages": 36,
+      "sample_messages": [
+        "@SpotifyCares my offline songs keep disappearing",
+        "@SpotifyCares offline songs not downloading on my phone",
+        "@SpotifyCares why did all my downloaded songs disappear?",
+        "3 months of Premium is just $0.99. Play music offline wherever you go.",
+        "@SpotifyCares my downloaded playlist is gone I had it set to offline mode"
+      ],
+      "keep": true
+    },
+    {
+      "cluster_id": 9,
+      "label": "other_unclear",
+      "display_name": "Other / Unclear",
+      "definition": "Message does not fit any defined intent, or intent is unclear from the available text. Includes emoji-only tweets, generic thank-you replies, URL-only messages, vague complaints without actionable detail.",
+      "example": "@SpotifyCares OK thanks",
+      "n_messages": 60,
+      "sample_messages": [
+        "@SpotifyCares OK thanks",
+        "@SpotifyCares Alright thank you",
+        "@SpotifyCares https://t.co/2vnOVzgod5",
+        "@116130 @SpotifyCares",
+        "what does this even mean @115888 https://t.co/fA2j7HmX5s"
+      ],
+      "keep": true
+    }
+  ]
+}

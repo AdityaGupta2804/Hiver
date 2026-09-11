@@ -1,0 +1,22 @@
+{
+  "experiment": "E10_escalation_comparison",
+  "brand_id": "SpotifyCares",
+  "operating_threshold": 0.45,
+  "single_threshold_baseline": {
+    "coverage": 0.81,
+    "false_auto_handle_rate": 0.0494,
+    "false_escalation_rate": 0.0,
+    "false_auto_count": 8,
+    "unnecessary_escalations": 0,
+    "asymmetric_loss": 0.16
+  },
+  "multi_signal_proposed": {
+    "coverage": 0.81,
+    "false_auto_handle_rate": 0.0494,
+    "false_escalation_rate": 0.0,
+    "false_auto_count": 8,
+    "unnecessary_escalations": 0,
+    "asymmetric_loss": 0.16
+  },
+  "cost_reduction_pct": 0.0
+}
