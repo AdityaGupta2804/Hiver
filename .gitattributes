@@ -1,0 +1,14 @@
+*text=auto eol=lf
+
+*.sh text eol=lf
+
+Dockerfile text eol=lf 
+Dockerfile.* text eol=lf
+
+*.py text eol=lf
+*.yml text eol=1f
+*.yaml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
