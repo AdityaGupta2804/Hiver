@@ -15,6 +15,47 @@ At my optimal operating threshold ($\tau^* = 0.50$), the system achieves **71.0%
 
 ---
 
+## 15-Minute Fast Reproduction Path
+
+To verify headline results without re-indexing millions of tweets:
+
+```bash
+# 1. Activate virtual environment
+.venv\Scripts\activate  # Windows
+# or: source .venv/bin/activate
+
+# 2. Run unit test suite
+python -m pytest tests/ -v
+
+# 3. Run full evaluation scorecard (Phase 12)
+python src/phase12_eval_harness.py --brand SpotifyCares
+
+# 4. Run interactive inference pipeline
+python src/pipeline.py --interactive
+```
+
+Or run via `make`:
+```bash
+make reproduce
+```
+
+### Run With Docker (Single Command Deliverable)
+```bash
+# Build the Docker image
+docker build -t hiver-customer-support .
+
+# Run the complete deliverable (tests + scorecard + failure analysis + sample inference)
+docker run --rm hiver-customer-support
+
+# Or run interactively
+docker run --rm -it hiver-customer-support python src/pipeline.py --interactive
+```
+Or via `docker compose`:
+```bash
+docker compose up
+```
+
+---
 ## Where to Find Everything
 
 If you are a Hiver reviewer looking to verify specific assignment deliverables, use this mapping:
@@ -447,47 +488,6 @@ If I had one additional week to extend this project, I would focus on three high
 
 ---
 
-## 15-Minute Fast Reproduction Path
-
-To verify headline results without re-indexing millions of tweets:
-
-```bash
-# 1. Activate virtual environment
-.venv\Scripts\activate  # Windows
-# or: source .venv/bin/activate
-
-# 2. Run unit test suite
-python -m pytest tests/ -v
-
-# 3. Run full evaluation scorecard (Phase 12)
-python src/phase12_eval_harness.py --brand SpotifyCares
-
-# 4. Run interactive inference pipeline
-python src/pipeline.py --interactive
-```
-
-Or run via `make`:
-```bash
-make reproduce
-```
-
-### Run With Docker (Single Command Deliverable)
-```bash
-# Build the Docker image
-docker build -t hiver-customer-support .
-
-# Run the complete deliverable (tests + scorecard + failure analysis + sample inference)
-docker run --rm hiver-customer-support
-
-# Or run interactively
-docker run --rm -it hiver-customer-support python src/pipeline.py --interactive
-```
-Or via `docker compose`:
-```bash
-docker compose up
-```
-
----
 
 ## Slow Path: Full Corpus Pipeline Regeneration
 
